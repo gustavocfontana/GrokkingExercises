@@ -8,29 +8,26 @@ internal class Program
         while (true)
         {
             Console.WriteLine("Grokking Exercises");
-            Console.WriteLine("1. Executar Exercício 1 (Busca Binária)");
-            Console.WriteLine("2. Executar Exercício 2 (Outro)");
-            Console.WriteLine("0. Sair");
-            Console.Write("Escolha uma opção: ");
+            Console.WriteLine("1. Execute Exercise 1 `Binary Search`");
+            Console.WriteLine("2. Execute Exercise 2 `Other`");
+            Console.WriteLine("0. Exit");
+            Console.Write("Choose an option: ");
             string? opcao = Console.ReadLine();
             switch (opcao)
             {
                 case "1":
-                    // Código do Exercício 1 aqui
-                    Console.WriteLine("Executando Busca Binária...");
-                    // Exemplo: instanciar e usar BuscaBinaria
+                    Console.WriteLine("Executing binary search exercise...");
                     break;
                 case "2":
-                    // Código do Exercício 2 aqui
-                    Console.WriteLine("Executando Outro Exercício...");
+                    Console.WriteLine("Executing another exercise...");
                     break;
                 case "0":
                     return;
                 default:
-                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    Console.WriteLine("Invalid option. Please try again.");
                     break;
             }
-            Console.WriteLine(); // Linha em branco para separação
+            Console.WriteLine();
         }
     }
 }
