@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-internal class Program
+public class Program
 {
     private static void Main()
     {
@@ -12,7 +12,7 @@ internal class Program
             Console.WriteLine("2. Execute Exercise 2 `Other`");
             Console.WriteLine("0. Exit");
             Console.Write("Choose an option: ");
-            string? opcao = Console.ReadLine();
+            var opcao = Console.ReadLine();
             switch (opcao)
             {
                 case "1":
