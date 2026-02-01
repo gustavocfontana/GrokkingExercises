@@ -1,33 +1,18 @@
-﻿using System;
+﻿using GrokkingExercises.Infrastructure.IO;
+using GrokkingExercises.Presentation.Console;
+using GrokkingExercises.Presentation.Console.Menus;
 
+namespace GrokkingExercises;
 
 public class Program
 {
     private static void Main()
     {
-        while (true)
-        {
-            Console.WriteLine("Grokking Exercises");
-            Console.WriteLine("1. Execute Exercise 1 `Binary Search`");
-            Console.WriteLine("2. Execute Exercise 2 `Other`");
-            Console.WriteLine("0. Exit");
-            Console.Write("Choose an option: ");
-            var opcao = Console.ReadLine();
-            switch (opcao)
-            {
-                case "1":
-                    Console.WriteLine("Executing binary search exercise...");
-                    break;
-                case "2":
-                    Console.WriteLine("Executing another exercise...");
-                    break;
-                case "0":
-                    return;
-                default:
-                    Console.WriteLine("Invalid option. Please try again.");
-                    break;
-            }
-            Console.WriteLine();
-        }
+        var io = new ConsoleIO();
+        var menu = new ConsoleMenu("Grokking Exercises", io)
+            .AddOption("1", "Chapter 01 - Binary Search", () =>
+                Chapter01Runner.Run(io), pauseAfterAction: false);
+
+        menu.Run(exitKey: "0", exitLabel: "Exit");
     }
 }
