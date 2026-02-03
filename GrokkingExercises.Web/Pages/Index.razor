@@ -1,0 +1,182 @@
+@page "/"
+
+<PageTitle>Grokking Exercises - Início</PageTitle>
+
+<h1>🎓 Bem-vindo ao Grokking Exercises!</h1>
+
+<p class="lead">
+    Aprenda algoritmos e estruturas de dados praticando com exercícios interativos.
+</p>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm feature-card">
+            <div class="card-body">
+                <h3 class="card-title">🎯 Modo Prática</h3>
+                <p class="card-text">
+                    Resolva exercícios interativos com feedback imediato.
+                    Quiz com diferentes níveis de dificuldade.
+                </p>
+                <a href="practice" class="btn btn-primary">Começar Prática</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm feature-card">
+            <div class="card-body">
+                <h3 class="card-title">⚙️ Gerador</h3>
+                <p class="card-text">
+                    Crie novos exercícios visualmente e gere código
+                    automaticamente seguindo as convenções.
+                </p>
+                <a href="generator" class="btn btn-success">Abrir Gerador</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm feature-card">
+            <div class="card-body">
+                <h3 class="card-title">📚 Exercícios</h3>
+                <p class="card-text">
+                    Veja todos os exercícios implementados,
+                    rode exemplos e estude as soluções.
+                </p>
+                <a href="exercises" class="btn btn-info">Ver Exercícios</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h4>📊 Seu Progresso</h4>
+            </div>
+            <div class="card-body">
+                <div class="progress-item">
+                    <div class="d-flex justify-content-between">
+                        <span>Capítulo 01 - Binary Search</span>
+                        <span class="badge bg-success">7/7 Concluído</span>
+                    </div>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%">100%</div>
+                    </div>
+                </div>
+
+                <div class="progress-item mt-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Modo Prática</span>
+                        <span class="badge bg-info">Em Andamento</span>
+                    </div>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 0%">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h4>🏆 Conquistas Recentes</h4>
+            </div>
+            <div class="card-body">
+                <div class="achievement">
+                    <span class="achievement-icon">🥇</span>
+                    <div>
+                        <strong>Iniciante</strong>
+                        <p class="mb-0 text-muted">Completou o primeiro exercício</p>
+                    </div>
+                </div>
+                <div class="achievement mt-3">
+                    <span class="achievement-icon">📚</span>
+                    <div>
+                        <strong>Estudante</strong>
+                        <p class="mb-0 text-muted">Leu toda a documentação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white">
+                <h4>📖 Recursos de Aprendizado</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="/docs/summary" class="text-decoration-none">
+                                    📋 <strong>Resumo Executivo</strong> - Visão geral do projeto
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="/docs/exercises-guide" class="text-decoration-none">
+                                    📚 <strong>Guia de Exercícios</strong> - Explicações passo a passo
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="/docs/practice-mode" class="text-decoration-none">
+                                    🎯 <strong>Modo Prática</strong> - Como usar o quiz
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="/docs/tests" class="text-decoration-none">
+                                    🧪 <strong>Testes</strong> - Estratégia de testes
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="/docs/conventions" class="text-decoration-none">
+                                    📐 <strong>Convenções</strong> - Padrões de código
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="/docs/generator" class="text-decoration-none">
+                                    ⚙️ <strong>Gerador</strong> - Como criar exercícios
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .feature-card {
+        transition: transform 0.2s;
+        height: 100%;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .progress-item {
+        padding: 10px 0;
+    }
+
+    .achievement {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .achievement-icon {
+        font-size: 2rem;
+    }
+</style>
