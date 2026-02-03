@@ -31,7 +31,6 @@ No menu principal, pressione **P**:
 Grokking Exercises
 1 - Capítulo 01 - Binary Search
 P - 🎯 Modo Prática (Quiz Interativo)    ← AQUI
-G - ⚙️ Gerador de Código
 0 - Sair
 ```
 
@@ -321,7 +320,6 @@ Semana 4: Prova Completa + Modo Desafio
 |------|-----------|-----------|
 | **Capítulo 01** | Ver implementações | Apenas visualizar |
 | **Modo Prática** 🎯 | Testar conhecimento | Quiz interativo |
-| **Gerador** | Criar novos exercícios | Gerar código |
 
 ---
 

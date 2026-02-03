@@ -17,9 +17,7 @@ public class Program
             .AddOption("1", "Capítulo 01 - Binary Search", () =>
                 Chapter01Runner.Run(io), pauseAfterAction: false)
             .AddOption("P", "🎯 Modo Prática (Quiz Interativo)", () =>
-                PracticeRunner.Run(io), pauseAfterAction: false)
-            .AddOption("G", "⚙️ Gerador de Código", () =>
-                ExerciseGeneratorRunner.Run(io), pauseAfterAction: false);
+                PracticeRunner.Run(io), pauseAfterAction: false);
 
         menu.Run(exitKey: "0", exitLabel: "Sair");
     }

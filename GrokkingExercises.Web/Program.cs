@@ -1,14 +1,8 @@
-using GrokkingExercises.Core.Domain.ExerciseGenerator;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-
-// Registra serviços do domínio
-builder.Services.AddSingleton<ExerciseCodeGenerator>();
-builder.Services.AddSingleton<ExerciseGeneratorService>();
 
 var app = builder.Build();
 

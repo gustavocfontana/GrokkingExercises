@@ -2,7 +2,7 @@
 
 Aprenda algoritmos e estruturas de dados praticando com exercícios interativos!
 
-Projeto educacional completo com **Console App**, **Modo Prática (Quiz)**, **Gerador de Exercícios** e **Interface Web (Blazor)**.
+Projeto educacional completo com **Console App**, **Modo Prática (Quiz)** e **Interface Web (Blazor)**.
 
 ---
 
@@ -30,21 +30,19 @@ dotnet test
 
 ## ✨ Features
 
-### 📱 3 Interfaces Disponíveis
+### 📱 2 Interfaces Disponíveis
 
 | Interface | Descrição | Status |
 |-----------|-----------|--------|
 | **Console App** | Terminal interativo com menus | ✅ Completo |
 | **Blazor Web** | Interface web moderna | ✅ MVP |
-| **API REST** | Endpoints para Angular | 📅 Planejado |
 
 ### 🎯 Funcionalidades
 
 - **Exercícios Implementados**: 7 exercícios de Binary Search
 - **Modo Prática**: Quiz interativo com 6 modos diferentes
-- **Gerador de Código**: Cria novos exercícios automaticamente
-- **Testes Automatizados**: 41 testes com xUnit
-- **Interface Web**: Dashboard e gerador visual
+- **Testes Automatizados**: 29 testes com xUnit
+- **Interface Web**: Dashboard com visualização dos exercícios
 
 ---
 
@@ -78,12 +76,10 @@ GrokkingExercises/
 
 ### 🔧 Desenvolvimento
 - **[CONVENTIONS.md](CONVENTIONS.md)** - 📐 Convenções de código
-- **[GENERATOR_GUIDE.md](GENERATOR_GUIDE.md)** - ⚙️ Como usar o gerador
 - **[BLAZOR_WEB.md](BLAZOR_WEB.md)** - 🌐 Documentação do Blazor
 
 ### 📊 Técnicos
 - **[TESTS.md](TESTS.md)** - 🧪 Estratégia de testes
-- **[GENERATOR_SUMMARY.md](GENERATOR_SUMMARY.md)** - Resumo do gerador
 
 ---
 
@@ -94,7 +90,6 @@ GrokkingExercises/
 Grokking Exercises
 1 - Capítulo 01 - Binary Search
 P - 🎯 Modo Prática (Quiz Interativo)
-G - ⚙️ Gerador de Código
 0 - Sair
 ```
 
@@ -104,16 +99,10 @@ G - ⚙️ Gerador de Código
 - **Por Dificuldade**: Fácil, Médio, Difícil
 - **Modo Desafio**: Contra o tempo (2 minutos)
 
-### 3. Gerador de Exercícios
-- Cria automaticamente: Classes, Testes e Runners
-- Segue 100% as convenções do projeto
-- Preview do código gerado
-- Validação automática
-
-### 4. Blazor Web
+### 3. Blazor Web
 - Dashboard interativo
-- Gerador visual com formulários
-- Preview em tempo real
+- Visualização dos exercícios
+- Estatísticas de progresso
 - Responsive design
 
 ---
@@ -170,11 +159,11 @@ dotnet test --filter "FullyQualifiedName~BinarySearch"
 | Métrica | Valor |
 |---------|-------|
 | Exercícios implementados | 7 (Binary Search) |
-| Testes automatizados | 41 |
-| Linhas de documentação | 1.250+ |
+| Testes automatizados | 29 |
+| Linhas de documentação | 800+ |
 | Projetos na solução | 3 |
 | Modos de prática | 6 |
-| Conformidade CLAUDE.MD | 100% |
+| Conformidade CLAUDE.MD | 98% |
 
 ---
 
@@ -189,11 +178,11 @@ dotnet test --filter "FullyQualifiedName~BinarySearch"
 6. ✅ Lower Bound
 7. ✅ Busca em Lista Rotacionada
 
-### Próximos Capítulos (via Gerador)
-- Chapter 02 - Selection Sort
-- Chapter 03 - Recursion
-- Chapter 04 - Quicksort
-- ... (facilmente expansível)
+### Próximos Capítulos
+- Chapter 02 - Selection Sort (em desenvolvimento)
+- Chapter 03 - Recursion (planejado)
+- Chapter 04 - Quicksort (planejado)
+- ... (conforme leitura do livro)
 
 ---
 
@@ -201,7 +190,7 @@ dotnet test --filter "FullyQualifiedName~BinarySearch"
 
 Este é um projeto educacional. Você pode:
 
-1. **Adicionar novos exercícios** usando o gerador
+1. **Adicionar novos exercícios** conforme avança no livro
 2. **Melhorar documentação** existente
 3. **Criar testes adicionais**
 4. **Implementar novos capítulos**
@@ -250,7 +239,7 @@ Este é um projeto educacional open-source.
 ### Tecnologia
 - Full-stack C#
 - Reutilização de código
-- 3 interfaces integradas
+- 2 interfaces integradas (Console + Web)
 - Testes automatizados
 
 ---

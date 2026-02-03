@@ -52,11 +52,8 @@ E o browser abrirá automaticamente em `https://localhost:5001`
 - Barra de progresso
 - Conquistas
 - Links para documentação
-
-### Gerador
-- Formulário interativo
-- Preview do código
-- Tabs para múltiplos arquivos
+- Visualização dos exercícios
+- Estatísticas de progresso
 
 ---
 
@@ -106,7 +103,6 @@ GrokkingExercises.Web/
 ├── Pages/
 │   ├── _Host.cshtml        ✅
 │   ├── Index.razor         ✅
-│   └── Generator.razor     ✅
 ├── Shared/
 │   ├── MainLayout.razor    ✅
 │   └── NavMenu.razor       ✅
@@ -126,9 +122,9 @@ GrokkingExercises.Web/
 
 1. ✅ Abrir no browser
 2. ✅ Navegar pelo Dashboard
-3. ✅ Testar o Gerador
-4. 🚧 Implementar Practice mode
-5. 🚧 Implementar Exercises list
+3. 🚧 Implementar páginas de Practice mode
+4. 🚧 Implementar páginas de Exercises list
+5. 🚧 Implementar página de Statistics
 
 ---
 
